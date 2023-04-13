@@ -1,4 +1,5 @@
 import React from "react";
+import Meta from "../components/Meta";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import Blogcard from "../components/Blogcard";
@@ -7,6 +8,7 @@ import Specialproduct from "../components/Specialproduct";
 const Home = () => {
   return (
     <>
+    <Meta title={"Home"} />
       <section className="home-wrapper-1 py-5">
         <div className="container-xxl">
           <div className="row">
@@ -47,8 +49,8 @@ const Home = () => {
                   />
                   <div className="small-banner-content position-absolute">
                     <h4>New Arrival</h4>
-                  <h5>Smartwatches</h5>
-                  <p>Starting at Rs. 1499</p>
+                    <h5>Smartwatches</h5>
+                    <p>Starting at Rs. 1499</p>
                   </div>
                 </div>
                 <div className="small-banner position-relative">
@@ -56,7 +58,7 @@ const Home = () => {
                     src="images/catbanner-03.jpg"
                     className="img-fluid rounded-3"
                     alt="main banner"
-                    />
+                  />
                   <div className="small-banner-content position-absolute">
                     <h4>15% Off</h4>
                     <h5>Latest iPads</h5>
@@ -90,7 +92,7 @@ const Home = () => {
                   <img src="images/service.png" alt="services" />
                   <div>
                     <h6>Free Shipping</h6>
-                    <p className="mb-0">From all orders above Rs.500</p> 
+                    <p className="mb-0">From all orders above Rs.500</p>
                   </div>
                 </div>
                 <div className="d-flex align-items-center gap-15">
@@ -125,7 +127,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
       </section>
       <section className="home-wrapper-2 py-5">
         <div className="container-xxl">
@@ -188,7 +189,6 @@ const Home = () => {
                   </div>
                   <img src="images/tv.jpg" alt="camera" />
                 </div>
-
               </div>
             </div>
           </div>
@@ -198,29 +198,22 @@ const Home = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <h3 className="section-heading">
-                Featured collection
-              </h3>
+              <h3 className="section-heading">Featured collection</h3>
             </div>
-            <Productcard/>
-            <Productcard/>
-            <Productcard/>
-            <Productcard/>
+            <Productcard />
+            <Productcard />
+            <Productcard />
+            <Productcard />
           </div>
         </div>
       </section>
 
-      
-
       <section className="special-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
-          <div className="col-12">
-              <h3 className="section-heading">
-                Special Products
-              </h3>
+            <div className="col-12">
+              <h3 className="section-heading">Special Products</h3>
             </div>
-
           </div>
           <div className="row">
             <Specialproduct />
@@ -234,14 +227,12 @@ const Home = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <h3 className="section-heading">
-                Our Popular Product
-              </h3>
+              <h3 className="section-heading">Our Popular Product</h3>
             </div>
-            <Productcard/>
-            <Productcard/>
-            <Productcard/>
-            <Productcard/>
+            <Productcard />
+            <Productcard />
+            <Productcard />
+            <Productcard />
           </div>
         </div>
       </section>
@@ -282,19 +273,27 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
+
       <section className="blog-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <h3 className="section-heading">
-                Our Latest Blogs
-              </h3>
+              <h3 className="section-heading">Our Latest Blogs</h3>
             </div>
-            <Blogcard/>
-            <Blogcard/>
-            <Blogcard/>
-            <Blogcard/>
+          </div>
+          <div className="row">
+            <div className="col-3">
+              <Blogcard />
+            </div>
+            <div className="col-3">
+              <Blogcard />
+            </div>
+            <div className="col-3">
+              <Blogcard />
+            </div>
+            <div className="col-3">
+              <Blogcard />
+            </div>
           </div>
         </div>
       </section>
